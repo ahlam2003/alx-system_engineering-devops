@@ -1,4 +1,2 @@
 #!/bin/bash
-for dir in $(grep "^d" <<< "$(ls -l)"); do
-chmod 755 $(echo $dir | awk '{print $9}')
-done
+chmod -R ugo+X
